@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body onload="load()">
+    <img name="img" onmouseover="MouseOver()" onmouseout="MouseOut()" >
+    <script lang="javascript" type="text/javascript">
+        function MouseOver()
+        {
+            document.images["img"].src = "img11.png";
+        }
+        function MouseOut()
+        {
+            document.images["img"].src = "img1.png";
+        }
+        function load()
+        {
+            document.images["img"].src = "img1.png";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        function writeCookie()
+        {
+            if (document.myform.customer.value == "") 
+            {
+                alert("field can't be blank");
+                return;
+            }
+            var cookievalue = escape(document.myform.customer.value)+ ":";
+            document.cookie = "name" + cookievalue;
+            document.write("setting cookie : " + "name = " + cookievalue)
+
+        }
+
+    </script>
+
+    <form name="myform" action="">
+        Enter Name: <input type="text" name="customer">
+        <input type="button" value="set Cookies" onclick="writeCookie()">
+    </form>
+</body>
+</html>

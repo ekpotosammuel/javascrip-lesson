@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY CATCH AND FINALLY</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        function myFun()
+        {
+            var a = 100;
+            try 
+            {
+                // var s = a.toUpperCase();
+                alert("value of a varaiable is " + a);
+            } 
+            catch (error) 
+            {
+                alert("error")
+            }
+            finally
+            {
+                alert("this block always runs")
+            }
+        }
+    </script>
+    <p>click the button to see the following result</p>
+    convert: <input type="button" value="click me" onclick="myFun()">
+</body>
+</html>

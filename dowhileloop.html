@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        var actual_pin = '12345';
+        var pin;
+        var count = 0;
+        do {
+            pin = prompt('Please enter your pin number');
+            count++;
+        } while (pin != actual_pin && count <3 );
+        if (pin == actual_pin) {
+            document.write('welcome useer');
+        } else {
+            document.write('accout lock');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMINATION</title>
+</head>
+<body onload="start()">
+    <img src="suit1.jpeg" name="image" onmouseover="stop()" onmouseout="start()" />
+
+    <script lang="javascript" type="text/javascript">
+        var arr = new Array("suit1.jpeg", "suit2.jpeg", "suit3.jpeg", "suitco.jpeg");
+        var i = 1;
+        var ref;
+        function picLibrary()
+        {
+            document.images["image"].src = arr[i];
+            i++
+            if (i>3) 
+            {
+                i = 0;    
+            }
+        }
+
+        function start()
+        {
+            ref = setInterval("picLibrary()", 1000);
+        }
+
+        function stop()
+        {
+            clearInterval(ref);
+        }
+    </script>
+</body>
+</html>
